@@ -1,0 +1,5 @@
+*** Test Cases ***;${user_name_test_data};${password_test_data}
+Invalid username;XXXX;learning
+Invalid Password;rahulshettyacademy;PPPP
+Special Character username;!@#$;learning
+Special Charatcer Passowrd;rahulshettyacademy;$%%^&
