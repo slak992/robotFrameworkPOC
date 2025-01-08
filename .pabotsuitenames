@@ -1,9 +1,6 @@
-datasources:fb5c06114b59d68e5d5842635be41cc4a7cc1903
-commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+datasources:a83eebfddc6dd982db9f835078cb1c577ffb7f38
+commandlineoptions:6fec63e0b54401e6ba6d84843cb86c2777a4ecdb
 suitesfrom:no-suites-from-option
-file:baafece3d3d55cc0982ace668825c30d506b0f37
---test testDemo1.Parameterised Test case
---test testDemo1.Check whether the cart is displayed in the home page
---test testDemo1.Check the items displayed in the home page
---test testDemo1.Verify the functionality for adding items to the cart
---test testDemo1.Verify the login form data fields
+file:353e9ae931d572aaf78a12e1bfc98e534cf95414
+--suite testDemo1
+--suite Tests.testDemo4

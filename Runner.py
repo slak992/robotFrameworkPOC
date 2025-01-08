@@ -13,10 +13,32 @@ def run_tests(runner,folder_path):
 
     if runner=="pabot":
         # Define arguments for pabot
+
+        # pabot_args = [
+        #     "--outputdir", output_dir,
+        #     "--processes", "4",
+        #     "--testlevelsplit",
+        #     "--output", "output.xml",
+        #     "--log", "log.html",
+        #     "--report", "report.html",
+        #     "tests/"  # Path to the test suite folder
+        # ]
+
+        test_file = os.path.join("tests", "testDemo1.robot")
+        # pabot_args = [
+        #     "--outputdir", output_dir,
+        #     "--processes", "4",
+        #     '--test', 'Check whether the cart is displayed in the home page',
+        #     "--output", "output.xml",
+        #     "--log", "log.html",
+        #     "--report", "report.html",
+        #     test_file  # Path to the test suite folder
+        # ]
+
         pabot_args = [
             "--outputdir", output_dir,
             "--processes", "4",
-            "--testlevelsplit",
+            "--include","smoke",
             "--output", "output.xml",
             "--log", "log.html",
             "--report", "report.html",
@@ -76,11 +98,9 @@ def run_tests(runner,folder_path):
         robot_args = [
             '--outputdir', output_dir,
             '--suite','testDemo3',
-            '--rerunfailed', rerun_test_folder_path,
-            '--output', rerun_output_dir,
             "tests/"
         ]
-        run_cli(robot_args)
+        run_cli(robot_args,exit=False)
         return [rerun_test_folder_path,rerun_output_dir]
     if runner == 'rerun':
         robot_args = [
@@ -101,5 +121,6 @@ if __name__ == "__main__":
     import os
     print(os.getcwd())
     print(os.path.exists("tests/testDemo1.robot"))
-    folder_path = run_tests("robot",[])
-    run_tests("rerun",folder_path)
+    run_tests("pabot", [])
+    # folder_path = run_tests("robot",[])
+    # run_tests("rerun",folder_path)
