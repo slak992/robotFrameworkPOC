@@ -13,7 +13,7 @@ Resource    config/base.robot
 
 *** Test Cases ***
 Check the items displayed in the home page
-    [Tags]      regrssion
+    [Tags]      regression
     Login to home page
     The homepage should contain the items from the expected list
 

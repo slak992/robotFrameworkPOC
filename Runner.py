@@ -1,3 +1,5 @@
+import argparse
+import json
 import os
 from datetime import datetime
 from pabot import pabot
@@ -117,10 +119,81 @@ def run_tests(runner,folder_path):
         else:
             print(f"Robot tests failed with return code {result}")
 
+
+def pabot_arg_config(args):
+    pabot_args = [
+        "--outputdir", args["--outputdir"],
+        "--processes", args["--processes"],
+        "--output", "output.xml",
+        "--log", "log.html",
+        "--report", "report.html",
+        args["test_folder_path"]
+    ]
+    for arg_key,arg_value in args.items():
+        if arg_value == "NO_Value":
+            pabot_args.append(arg_key)
+
+        elif arg_value not in pabot_args:
+
+            pabot_args.extend(["--"+arg_key,arg_value])
+        else:
+            print("Invalid argument")
+    return pabot_args
+
+def main():
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    output_dir = f"tests/reports/{timestamp}"
+    os.makedirs(output_dir, exist_ok=True)
+    parse = argparse.ArgumentParser(description="Getting the user config options")
+    parse.add_argument("--runner",type=str,required=True,help="Runner option")
+    parse.add_argument("--items", action="append", required=True,help="Multiple items as arguments (e.g., --processes 4 --testlevelsplit tests/testDemo.robot).")
+    #parse.add_argument("--items",nargs="+",required=True,help="Runner config options")
+
+    parse_arg = parse.parse_args()
+    runner = parse_arg.runner
+
+    config_data=["--outputdir",output_dir]
+    try:
+        for each_item in parse_arg.items[0].split(" "):
+            if "_" in each_item:
+                each_item = each_item.replace("_"," ")
+            config_data.append(each_item)
+        # config_data.extend([','.join(parse_arg.items[0].split(" "))])
+    except Exception as ex:
+        print(f"Invalid data :{str(ex)}")
+        return
+
+    if runner == "pabot":
+        pabot_args = []
+        pabot_args.extend(config_data[:-1])
+        pabot_args.extend([
+            "--output", "output.xml",
+            "--log", "log.html",
+            "--report", "report.html"])
+        pabot_args.append(config_data[-1])
+        print(pabot_args)
+        pabot.main(pabot_args)
+
+        # config_data.extend(pabot_args)
+        # print(config_data)
+        # pabot.main(config_data)
+
+
+
+
+
+
+
+
 if __name__ == "__main__":
-    import os
-    print(os.getcwd())
-    print(os.path.exists("tests/testDemo1.robot"))
-    run_tests("pabot", [])
+    main()
+
+    # args={"outputdir":"reports/","processes":"4","path":"tests/","include":"smoke"}
+    # args_after_update = pabot_arg_config(args)
+    # print(args_after_update)
+    # import os
+    # print(os.getcwd())
+    # print(os.path.exists("tests/testDemo1.robot"))
+    # run_tests("pabot", [])
     # folder_path = run_tests("robot",[])
     # run_tests("rerun",folder_path)
