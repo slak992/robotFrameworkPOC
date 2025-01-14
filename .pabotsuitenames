@@ -1,6 +1,0 @@
-datasources:58067e41e7eb665dd4311bd49e44122af0974e92
-commandlineoptions:6fec63e0b54401e6ba6d84843cb86c2777a4ecdb
-suitesfrom:no-suites-from-option
-file:9e9bcdda1271ae267e486d3052e2bcfeaf047a87
---suite Tests.testDemo1
---suite Suites.robotFramework.Tests.testDemo4

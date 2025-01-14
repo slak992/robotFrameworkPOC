@@ -13,13 +13,14 @@ Resource    config/base.robot
 
 *** Test Cases ***
 Check the items displayed in the home page
-    [Tags]      regression
+    [Tags]      regression      fail
     Login to home page
     The homepage should contain the items from the expected list
 
 
 
 Verify the login and fail for rerun
+    [Tags]      fail
     Enter username and password     scp     XXX
     Click Signin and user should successfully login
     
