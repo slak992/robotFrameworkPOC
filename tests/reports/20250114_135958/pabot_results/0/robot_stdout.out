@@ -1,0 +1,152 @@
+==============================================================================
+testDemo1                                                                     
+==============================================================================
+Parameterised Test case                                                 
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:13
+    T:  Parameterised Test case    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:8
+      Open the browser and launch the login page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot:13
+      Set Screenshot Directory    E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots
+      |  E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots = E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config/../reports/screenshots (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:13
+    T:  Parameterised Test case    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:9
+      Close Browser    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.
+------------------------------------------------------------------------------
+Check whether the cart is displayed in the home page                    
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:20
+    T:  Check whether the cart is displayed in the home page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:8
+      Open the browser and launch the login page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot:13
+      Set Screenshot Directory    E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots
+      |  E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots = E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config/../reports/screenshots (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:20
+    T:  Check whether the cart is displayed in the home page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:9
+      Close Browser    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.
+------------------------------------------------------------------------------
+Check the items displayed in the home page                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:24
+    T:  Check the items displayed in the home page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:8
+      Open the browser and launch the login page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot:13
+      Set Screenshot Directory    E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots
+      |  E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots = E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config/../reports/screenshots (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:24
+    T:  Check the items displayed in the home page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:9
+      Close Browser    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.
+------------------------------------------------------------------------------
+Verify the functionality for adding items to the cart                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:29
+    T:  Verify the functionality for adding items to the cart    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:8
+      Open the browser and launch the login page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot:13
+      Set Screenshot Directory    E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots
+      |  E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots = E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config/../reports/screenshots (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:29
+    T:  Verify the functionality for adding items to the cart    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:9
+      Close Browser    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.
+------------------------------------------------------------------------------
+Verify the login form data fields                                       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:33
+    T:  Verify the login form data fields    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:8
+      Open the browser and launch the login page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot:13
+      Set Screenshot Directory    E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots
+      |  E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots = E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config/../reports/screenshots (str)
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:33
+    T:  Verify the login form data fields    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:9
+      Close Browser    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.
+------------------------------------------------------------------------------
+testDemo1                                                             | FAIL |
+5 tests, 0 passed, 5 failed
+==============================================================================
+Output:  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\reports\20250114_135958\pabot_results\0\rerun_output.xml

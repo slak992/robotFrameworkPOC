@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2 (Python 3.12.7 on win32)" generated="2025-01-14T14:02:18.598299" rpa="false" schemaversion="5">
+<suite id="s1" name="testDemo1" source="E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot">
+<test id="s1-t1" name="Verify the login form data fields" line="33">
+<kw name="Open the browser and launch the login page" owner="resources" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<arg>screenshot_dir</arg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-01-14T14:02:01.046851" elapsed="0.000000"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2025-01-14T14:02:01.046851" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>5</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-01-14T14:02:01.046851" elapsed="0.000000"/>
+</kw>
+<arg>Set Selenium Timeout</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-01-14T14:02:01.046851" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-14T14:02:01.046851" level="INFO">Opening browser 'chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-14T14:02:01.046851" elapsed="4.898079"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-01-14T14:02:05.944930" elapsed="0.029225"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>css:body</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-01-14T14:02:05.974155" elapsed="0.010550"/>
+</kw>
+<msg time="2025-01-14T14:02:05.984705" level="INFO">${status} = PASS</msg>
+<msg time="2025-01-14T14:02:05.984705" level="INFO">${error} = None</msg>
+<var>${status}</var>
+<var>${error}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>css:body</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-01-14T14:02:05.974155" elapsed="0.010550"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${status}'=='FAIL'</arg>
+<arg>Relaunch browser</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-01-14T14:02:05.984705" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-01-14T14:02:01.046851" elapsed="4.937854"/>
+</kw>
+<kw name="Enter username and password" owner="login">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-14T14:02:05.990237" level="INFO">Typing text 'rahulshettyacademy' into text field 'username'.</msg>
+<arg>${username_locator}</arg>
+<arg>${user_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T14:02:05.984705" elapsed="0.163455"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2025-01-14T14:02:06.148160" level="INFO">Typing password into text field 'password'.</msg>
+<msg time="2025-01-14T14:02:06.196253" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password_locator}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T14:02:06.148160" elapsed="0.126593"/>
+</kw>
+<status status="PASS" start="2025-01-14T14:02:05.984705" elapsed="0.290048"/>
+</kw>
+<kw name="Select user radio button" owner="login">
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2025-01-14T14:02:06.274753" level="INFO">Selecting 'user' from radio button 'radio'.</msg>
+<arg>radio</arg>
+<arg>user</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2025-01-14T14:02:06.274753" elapsed="0.092074"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>okayBtn</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-14T14:02:06.366827" elapsed="0.240638"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-01-14T14:02:06.607465" level="INFO">Clicking element 'okayBtn'.</msg>
+<arg>okayBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-14T14:02:06.607465" elapsed="0.050648"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<msg time="2025-01-14T14:02:11.919693" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../screenshots/selenium-screenshot-6.png"&gt;&lt;img src="../screenshots/selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-14T14:02:11.919693" level="FAIL">Element 'okayBtn' still visible after 5 seconds.</msg>
+<arg>okayBtn</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="FAIL" start="2025-01-14T14:02:06.658113" elapsed="5.261580">Element 'okayBtn' still visible after 5 seconds.</status>
+</kw>
+<kw name="Radio Button Should Be Set To" owner="SeleniumLibrary">
+<arg>radio</arg>
+<arg>user</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<status status="NOT RUN" start="2025-01-14T14:02:11.919693" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-14T14:02:06.274753" elapsed="5.644940">Element 'okayBtn' still visible after 5 seconds.</status>
+</kw>
+<kw name="Select Teacher from the dropdown box" owner="login">
+<status status="NOT RUN" start="2025-01-14T14:02:11.919693" elapsed="0.000000"/>
+</kw>
+<kw name="Check the agreement box" owner="login">
+<status status="NOT RUN" start="2025-01-14T14:02:11.919693" elapsed="0.000000"/>
+</kw>
+<kw name="Click Signin and user should successfully login" owner="login">
+<status status="NOT RUN" start="2025-01-14T14:02:11.919693" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-14T14:02:11.919693" elapsed="2.366794"/>
+</kw>
+<status status="FAIL" start="2025-01-14T14:02:01.031187" elapsed="13.255300">Element 'okayBtn' still visible after 5 seconds.</status>
+</test>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 1 executions.</doc>
+<status status="FAIL" start="2025-01-14T14:02:00.731000" elapsed="13.255000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="testDemo1" id="s1" pass="0" fail="1" skip="0">testDemo1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

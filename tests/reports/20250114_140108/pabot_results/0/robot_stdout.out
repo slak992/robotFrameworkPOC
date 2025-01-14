@@ -1,0 +1,22 @@
+==============================================================================
+testDemo1                                                                     
+==============================================================================
+Verify the login form data fields                                       
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:33
+    T:  Verify the login form data fields    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot:35
+      Select user radio button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\login.robot:50
+      Wait Until Element Is Not Visible    okayBtn
+______________________________________________________________________________
+| FAIL |
+Element 'okayBtn' still visible after 5 seconds.
+------------------------------------------------------------------------------
+testDemo1                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\reports\20250114_140108\pabot_results\0\rerun_output.xml

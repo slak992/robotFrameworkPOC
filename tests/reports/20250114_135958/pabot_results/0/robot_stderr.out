@@ -1,0 +1,102 @@
+[ ERROR ] Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin
+[ ERROR ] Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin
+[ ERROR ] Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\login.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin
+[ ERROR ] Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\home.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin
+[ ERROR ] Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\cart.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin
+[ ERROR ] Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\purchase.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin
+[ ERROR ] Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 6: Initializing library 'Shop' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Shop.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.
+[ ERROR ] Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 7: Initializing library 'Cart' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Cart.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.

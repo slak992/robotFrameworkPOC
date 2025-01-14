@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2 (Python 3.12.7 on win32)" generated="2025-01-14T14:00:01.312240" rpa="false" schemaversion="5">
+<suite id="s1" name="testDemo1" source="E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot">
+<test id="s1-t1" name="Parameterised Test case" line="13">
+<kw name="Open the browser and launch the login page" owner="resources" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<arg>screenshot_dir</arg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-01-14T14:00:00.145961" elapsed="0.000000"/>
+</kw>
+<kw name="Set Screenshot Directory">
+<msg time="2025-01-14T14:00:00.148488" level="FAIL">No keyword with name 'Set Screenshot Directory' found.</msg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<status status="FAIL" start="2025-01-14T14:00:00.148488" elapsed="0.000000">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>Set Selenium Timeout</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser">
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.003016"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2025-01-14T14:00:00.151504" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<var>${status}</var>
+<var>${error}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>css:body</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.151504" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${status}'=='FAIL'</arg>
+<arg>Relaunch browser</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.151504" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-14T14:00:00.145961" elapsed="0.005543">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg time="2025-01-14T14:00:00.151504" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" start="2025-01-14T14:00:00.151504" elapsed="0.000000">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-14T14:00:00.141441" elapsed="0.010063">Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<test id="s1-t2" name="Check whether the cart is displayed in the home page" line="20">
+<kw name="Open the browser and launch the login page" owner="resources" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<arg>screenshot_dir</arg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-01-14T14:00:00.145961" elapsed="0.000000"/>
+</kw>
+<kw name="Set Screenshot Directory">
+<msg time="2025-01-14T14:00:00.148488" level="FAIL">No keyword with name 'Set Screenshot Directory' found.</msg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<status status="FAIL" start="2025-01-14T14:00:00.148488" elapsed="0.000000">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>Set Selenium Timeout</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser">
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<var>${status}</var>
+<var>${error}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>css:body</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${status}'=='FAIL'</arg>
+<arg>Relaunch browser</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.003016"/>
+</kw>
+<status status="FAIL" start="2025-01-14T14:00:00.141441" elapsed="0.010063">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg time="2025-01-14T14:00:00.151504" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" start="2025-01-14T14:00:00.151504" elapsed="0.000000">No keyword with name 'Close Browser' found.</status>
+</kw>
+<tag>fail</tag>
+<tag>smoke</tag>
+<status status="FAIL" start="2025-01-14T14:00:00.141441" elapsed="0.010063">Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<test id="s1-t3" name="Check the items displayed in the home page" line="24">
+<kw name="Open the browser and launch the login page" owner="resources" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<arg>screenshot_dir</arg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-01-14T14:00:00.141441" elapsed="0.000000"/>
+</kw>
+<kw name="Set Screenshot Directory">
+<msg time="2025-01-14T14:00:00.145961" level="FAIL">No keyword with name 'Set Screenshot Directory' found.</msg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<status status="FAIL" start="2025-01-14T14:00:00.145961" elapsed="0.000000">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>Set Selenium Timeout</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.145961" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser">
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<status status="NOT RUN" start="2025-01-14T14:00:00.145961" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<var>${status}</var>
+<var>${error}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>css:body</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${status}'=='FAIL'</arg>
+<arg>Relaunch browser</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-14T14:00:00.141441" elapsed="0.007047">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg time="2025-01-14T14:00:00.151504" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" start="2025-01-14T14:00:00.148488" elapsed="0.003016">No keyword with name 'Close Browser' found.</status>
+</kw>
+<tag>fail</tag>
+<status status="FAIL" start="2025-01-14T14:00:00.141441" elapsed="0.010063">Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<test id="s1-t4" name="Verify the functionality for adding items to the cart" line="29">
+<kw name="Open the browser and launch the login page" owner="resources" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<arg>screenshot_dir</arg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-01-14T14:00:00.141441" elapsed="0.000000"/>
+</kw>
+<kw name="Set Screenshot Directory">
+<msg time="2025-01-14T14:00:00.145961" level="FAIL">No keyword with name 'Set Screenshot Directory' found.</msg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<status status="FAIL" start="2025-01-14T14:00:00.145961" elapsed="0.002527">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>Set Selenium Timeout</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser">
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<var>${status}</var>
+<var>${error}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>css:body</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${status}'=='FAIL'</arg>
+<arg>Relaunch browser</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.148488" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-14T14:00:00.141441" elapsed="0.007047">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg time="2025-01-14T14:00:00.151504" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" start="2025-01-14T14:00:00.151504" elapsed="0.000000">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-14T14:00:00.141441" elapsed="0.010063">Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<test id="s1-t5" name="Verify the login form data fields" line="33">
+<kw name="Open the browser and launch the login page" owner="resources" type="SETUP">
+<kw name="Create Dictionary" owner="BuiltIn">
+<arg>screenshot_dir</arg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2025-01-14T14:00:00.973796" elapsed="0.000000"/>
+</kw>
+<kw name="Set Screenshot Directory">
+<msg time="2025-01-14T14:00:00.973796" level="FAIL">No keyword with name 'Set Screenshot Directory' found.</msg>
+<arg>E:\\Sree Docs\\Work\\robotFrameworkPOC\\robotFrameworkPOC\\tests\\config/../reports/screenshots</arg>
+<status status="FAIL" start="2025-01-14T14:00:00.973796" elapsed="0.000000">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<arg>Set Selenium Timeout</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.973796" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser">
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<status status="NOT RUN" start="2025-01-14T14:00:00.973796" elapsed="0.000000"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" start="2025-01-14T14:00:00.973796" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<var>${status}</var>
+<var>${error}</var>
+<arg>Wait Until Page Contains Element</arg>
+<arg>css:body</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.973796" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${status}'=='FAIL'</arg>
+<arg>Relaunch browser</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-01-14T14:00:00.973796" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-01-14T14:00:00.973796" elapsed="0.000000">No keyword with name 'Set Screenshot Directory' found.</status>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg time="2025-01-14T14:00:00.973796" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" start="2025-01-14T14:00:00.973796" elapsed="0.000000">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-14T14:00:00.973796" elapsed="0.000000">Setup failed:
+No keyword with name 'Set Screenshot Directory' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 5 executions.</doc>
+<status status="FAIL" start="2025-01-14T13:59:59.963000" elapsed="1.010000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">fail</stat>
+<stat pass="0" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="testDemo1" id="s1" pass="0" fail="5" skip="0">testDemo1</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-14T13:59:59.993005" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.010640" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.088146" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\login.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.088146" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\home.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.110787" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\cart.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.119795" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\purchase.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.135432" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 6: Initializing library 'Shop' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Shop.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T14:00:00.141441" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 7: Initializing library 'Cart' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Cart.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T13:59:59.993005" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.010640" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.088146" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\login.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.088146" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\home.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.103777" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\cart.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.110787" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\purchase.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.135432" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 6: Initializing library 'Shop' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Shop.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T14:00:00.141441" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 7: Initializing library 'Cart' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Cart.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T13:59:59.993005" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.010640" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.088146" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\login.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.088146" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\home.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.103777" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\cart.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.110787" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\purchase.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.135432" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 6: Initializing library 'Shop' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Shop.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T14:00:00.135432" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 7: Initializing library 'Cart' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Cart.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T13:59:59.993005" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.010640" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.072509" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\login.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.088146" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\home.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.103777" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\cart.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.110787" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\purchase.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.135432" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 6: Initializing library 'Shop' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Shop.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T14:00:00.141441" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 7: Initializing library 'Cart' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Cart.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T14:00:00.894435" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\testDemo1.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.911066" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\resources.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.942094" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\login.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.942094" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\home.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.942094" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\cart.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.960238" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\POM\keyword\purchase.robot' on line 2: Importing library 'SeleniumLibrary' failed: ModuleNotFoundError: No module named 'SeleniumLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\akhil\Anaconda3\Scripts\robot.exe
+  C:\Users\akhil\Anaconda3\python312.zip
+  C:\Users\akhil\Anaconda3\DLLs
+  C:\Users\akhil\Anaconda3\Lib
+  C:\Users\akhil\Anaconda3
+  C:\Users\akhil\Anaconda3\Lib\site-packages
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32
+  C:\Users\akhil\Anaconda3\Lib\site-packages\win32\lib
+  C:\Users\akhil\Anaconda3\Lib\site-packages\Pythonwin</msg>
+<msg time="2025-01-14T14:00:00.973796" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 6: Initializing library 'Shop' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Shop.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+<msg time="2025-01-14T14:00:00.973796" level="ERROR">Error in file 'E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\tests\config\base.robot' on line 7: Initializing library 'Cart' with no arguments failed: No library 'SeleniumLibrary' found.
+robot.errors.DataError: No library 'SeleniumLibrary' found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Sree Docs\Work\robotFrameworkPOC\robotFrameworkPOC\customLibrary\Python_POM\Cart.py", line 8, in __init__
+    self.seleLib = BuiltIn().get_library_instance("SeleniumLibrary")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akhil\Anaconda3\Lib\site-packages\robot\libraries\BuiltIn.py", line 3841, in get_library_instance
+    raise RuntimeError(str(err))
+RuntimeError: No library 'SeleniumLibrary' found.</msg>
+</errors>
+</robot>
