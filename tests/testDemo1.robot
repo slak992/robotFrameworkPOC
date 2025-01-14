@@ -18,10 +18,11 @@ Parameterised Test case
 
 
 Check whether the cart is displayed in the home page
-    [Tags]      smoke
+    [Tags]      smoke       fail
     Login to home page
     Sleep    5
 Check the items displayed in the home page
+    [Tags]      fail
     Login to home page
     The homepage should contain the items from the expected list
 
