@@ -17,4 +17,4 @@ Complete the order
     verify elements in the cart     ${order_list}   True
     &{country_details}=     Create Dictionary       Ind=India
     Select the location and click Puchase button        ${country_details}
-    Pause Execution
+
