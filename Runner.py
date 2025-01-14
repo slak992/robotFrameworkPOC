@@ -161,7 +161,7 @@ def check_failed_testcase(output_dir_xml):
             print("Fail Test case exist")
             if each_stat.get("name") not in failed_test_suite_name and each_stat.get("name") is not None and each_stat.get("name") != "Tests":
                 failed_test_suite_name.append(each_stat.get("name"))
-    if failed_test_suite_name is not None:
+    if len(failed_test_suite_name) != 0:
         return True,failed_test_suite_name
     else:
         return False,None
@@ -272,11 +272,6 @@ if __name__ == "__main__":
     runner, output_dir, test_folder = main()
     if output_dir is not None:
         output_xml = os.path.join(output_dir, 'output.xml')
-        # if runner == 'pabot':
-        #     pabot_result_folder = os.path.join(output_dir,'pabot_results')
-        #     output_xml = os.path.join(pabot_result_folder,'output.xml')
-        # else:
-        #     output_xml = os.path.join(output_dir,'output.xml')
         output_rerun_xml= None
         if runner == 'pabot':
             output_rerun_xml = os.path.join(output_dir, 'pabot_results', 'rerun_output.xml')
@@ -286,15 +281,3 @@ if __name__ == "__main__":
         if status:
             rerun(runner,output_dir,output_xml,output_rerun_xml,test_folder)
 
-
-
-
-    # args={"outputdir":"reports/","processes":"4","path":"tests/","include":"smoke"}
-    # args_after_update = pabot_arg_config(args)
-    # print(args_after_update)
-    # import os
-    # print(os.getcwd())
-    # print(os.path.exists("tests/testDemo1.robot"))
-    # run_tests("pabot", [])
-    # folder_path = run_tests("robot",[])
-    # run_tests("rerun",folder_path)
